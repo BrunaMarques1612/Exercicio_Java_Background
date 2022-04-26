@@ -1,0 +1,25 @@
+package janelasrgb;
+
+/**
+ * @author bruna
+ */
+
+import java.awt.Color;
+import javax.swing.JFrame;
+import java.awt.Container;
+
+    public class JanelasRGB extends JFrame{
+        public JanelasRGB(){
+            super("Alterando a cor de fundo de uma janela");
+            Container tela = getContentPane();
+            tela.setBackground(Color.magenta);
+            setSize(500,500);
+            setVisible(true);
+        }
+    
+    public static void main(String[] args) {
+       JanelasRGB app = new JanelasRGB();
+       app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+}
